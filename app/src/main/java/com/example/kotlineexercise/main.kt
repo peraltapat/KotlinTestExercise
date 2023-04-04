@@ -35,23 +35,34 @@ fun runTests() {
     )
     check("A" == getExamGrade(examResults[0])) {
         "91 should translate to an A"
-        println("Check 1: Passed")
+        println("Check 1: Failed!")
     }
     check("B" == getExamGrade(examResults[1])) {
         "85 should translate to a B"
-        println("Check 2: Passed")
+        println("Check 1: Passed")
+        println("Check 2: Failed!")
     }
     check("C" == getExamGrade(examResults[2])) {
         "70 should translate to a C"
-        println("Check 3: Passed")
+        println("Check 1: Passed")
+        println("Check 2: Passed")
+        println("Check 3: Failed!")
     }
     check("F" == getExamGrade(examResults[3])) {
         "42 should translate to an F"
-        println("Check 4: Passed")
+        println("Check 1: Passed")
+        println("Check 2: Passed")
+        println("Check 3: Passed")
+        println("Check 4: Failed!")
     }
 
     check(2 == countScoresHigherThan(85, examResults)) {
         "Two students scored higher than 85"
-        println("Check 5: Passed")
+        println("Check 1: Passed")
+        println("Check 2: Passed")
+        println("Check 3: Passed")
+        println("Check 4: Passed")
+        println("Check 5: Failed!")
     }
+    println("All test cases passed!")
 }
